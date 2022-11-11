@@ -9,6 +9,12 @@ a{
 }
 
 header{
+
+    background-position: 70% 28%;
+    background-repeat: no-repeat;
+    background-size: 640px auto;
+
+    background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg);
     
 }
 
@@ -25,19 +31,29 @@ header{
 .logo .first {
     color: white;
     font-size: 37px;
+    font-weight: 700;
+    font-family: "AvantGarde Bold", Sans-serif;
 }
 
 nav i{
     color: white;
     margin-left: 2rem;
+    cursor: pointer;
+}
+
+#Menu{
+    font-size: 25px;
+    display: none;
 }
 
 nav a{
     color: white;
     font-size: 16px;
+    font-weight: 700;
     padding: 10px 0;
     display: inline-block;
     margin-left: 3rem;
+    font-family: "AvantGarde Bold", Sans-serif;
 }
 
 .slider{
@@ -48,6 +64,8 @@ nav a{
     color: white;
     font-size: 78px;
     margin-bottom: 50px;
+    font-family:  "AvantGarde Bold", Sans-serif;
+    font-weight: 900;
 }
 
 .slider a{
@@ -59,8 +77,21 @@ nav a{
 
 }
 
-@media(max-width: 576px){
-.nav{
+@media (max-width:576px) {
+
+    .container{
+        padding: 1rem 1rem;
+    }
+#Menu{
+    display: block;
+    
+
+}
+
+nav a{
+    display: none;
+}
+#Search{
     display: none;
 }
 }
